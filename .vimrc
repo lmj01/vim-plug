@@ -16,6 +16,7 @@ call plug#begin()
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'ghifarit53/tokyonight-vim'
     Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-commentary' "注释，根据文件名后缀来注释，可以追加很多特定的格式"
     Plug 'Yggdroot/indentLine'
     Plug 'frazrepo/vim-rainbow'
 
