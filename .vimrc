@@ -47,6 +47,8 @@ let g:tokyonight_style = 'night'
 let g:tokyonight_enable_italic = 1
 let g:tokyonight_transparent_background = 0
 
+let NERDTreeShowHidden = 1 "1 显示隐藏文件 0 隐藏非常规文件
+
 syntax on                   "打开语法高亮
 set backspace=2             "允许在自动缩进、换行符、插入开始位置上退格
 set whichwrap+=<,>,h,l      "使光标移动可以跨行
