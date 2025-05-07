@@ -125,6 +125,12 @@ let g:Lf_WindowHeight = 0.3
 let g:Lf_HideHelp = 1
 let g:Lf_ShowRelativePath = 1
 
+" 自动加载 tags 文件
+set tags=./tags;,tags;
+
+" 快捷键跳转（如 Ctrl + ] 跳转到定义，Ctrl + t 返回）
+nnoremap <silent> <C-]> :tag <C-R>=expand("<cword>")<CR><CR>
+
 "以下内容为 indentLine 的配置
 let g:indentLine_showFirstIndentLevel = 1
 
@@ -229,3 +235,10 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+if has("gui_running")
+  if has("win32") || has("win64")
+    set guifont=新宋体:h12
+  elseif has("unix")
+  elseif has("macunix")
+  endif
+endif
