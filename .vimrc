@@ -242,3 +242,12 @@ if has("gui_running")
   elseif has("macunix")
   endif
 endif
+
+" 2025-7-7 begin 
+" use modern js highlighting if (available)
+let g:javascript_plugin_jsdoc = 1 
+let g:javascript_plugin_flow = 1 
+" use 4 space 
+autocmd FileType javascript setlocal shiftwidth=4 tabstop=4 
+autocmd FileType typescript setlocal shiftwidth=4 tabstop=4
+" 2025-7-7 end
