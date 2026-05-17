@@ -89,6 +89,7 @@ set completeopt=menu,menuone,noselect,noinsert
 
 set previewpopup=height:20,width:80     "把预览窗口配置为弹出窗口
 
+
 "按 F2 打开关闭文件树窗口
 map <F2> :NERDTreeToggle<CR>          
 "按 F3 打开函数列表窗口
@@ -237,7 +238,9 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 if has("gui_running")
   if has("win32") || has("win64")
-    set guifont=新宋体:h12
+    " set guifont=新宋体:h16
+    " set font 
+    set guifont=Consolas:h16 " 字体，只使用
   elseif has("unix")
   elseif has("macunix")
   endif
